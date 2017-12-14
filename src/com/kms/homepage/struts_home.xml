@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	
+	<package name="index" namespace = "/index" extends = "struts-default">
+		<action name="randGoodsLoad" class = "com.kms.homepage.action.RandGoodsLoadAction" method = "randGoodsLoad">
+			<!-- <result name="success">/index.jsp</result> -->
+		</action>
+		<action name="topGoods" class = "com.kms.homepage.action.TopGoodsAction" method = "topGoods">
+			<!-- <result name="success">/index.jsp</result> -->
+		</action>
+		<action name="topShops" class = "com.kms.homepage.action.TopShopAction" method = "topShops">
+			<!-- <result name="success">/index.jsp</result> -->
+		</action>
+		<action name="classify" class = "com.kms.homepage.action.ClassifyAction" method = "classify">
+			<!-- <result name="success">/index.jsp</result> -->
+		</action>
+		<action name="showGoods" class = "com.kms.homepage.action.ShowGoodsAction" method = "showGoods">
+			<!-- <result name="success">/index.jsp</result> -->
+		</action>
+		<action name="showShop" class = "com.kms.homepage.action.ShowShopAction" method = "showShop">
+			<!-- <result name="success">/index.jsp</result> -->
+		</action>
+		<action name="goodsClassify" class = "com.kms.homepage.action.ShopGoodsClassifyAction" method = "goodsClassify">
+			<!-- <result name="success">/index.jsp</result> -->
+		</action>
+		<action name="fuzzySearch" class = "com.kms.homepage.action.FuzzySearchAction" method = "fuzzySearch">
+			<!-- <result name="success">/index.jsp</result> -->
+		</action>
+	</package>
+</struts>    

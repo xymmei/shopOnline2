@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+
+	<package name="shop" namespace="/shop" extends="struts-default">
+		<action name="sq" class="com.kms.shop.action.SqAction" method="shenqing">
+		</action>
+		<action name="Goods_*" class="com.kms.shop.action.SpAction"
+			method="{1}">
+		</action>
+		<action name="Sp_*" class="com.kms.shop.action.SpAction"
+			method="{1}">
+		</action>
+		<action name="Ms_*" class="com.kms.shop.action.MsAction"
+			method="{1}">
+		</action>
+		<action name="Od_*" class="com.kms.shop.action.OdAction"
+			method="{1}">
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	
+	 <package name="json" namespace="/user" extends="struts-default,json-default" >  
+         <action name="Check_User" class="com.kms.user.action.User_action" method="Check_User"></action>
+         <action name="reg" class="com.kms.user.action.User_action" method="reg"></action>
+         <action name="login" class="com.kms.user.action.User_action" method="login"></action>
+         <!-- 用户操作 -->
+         <action name="logout" class="com.kms.user.action.User_action" method="logout"></action>
+         <action name="User_*" class="com.kms.user.action.User_action" method="{1}"></action>
+         <!-- 图片操作 -->
+      	 <action name="Picture_*" class="com.kms.user.action.User_action" method="{1}"></action>
+         
+         <!-- 订单操作 -->
+         <action name="QueryOrder_*" class="com.kms.user.action.QueryOrder_action" method="{1}"></action>
+   		 
+   		 <!-- 购物车 -->
+   		 <action name="ShoppingCart_*" class="com.kms.user.action.Cart_action" method="{1}"></action>
+   		<!-- 验证码 -->
+   		<action name="checkRegCode" class="com.kms.user.action.CheckRegCodeAction" method="checkRegCode"></action>
+   		<action name="createRegCode" class="com.kms.user.action.CreateRegCodeAction" method="createRegCode"></action>
+    </package>  
+</struts>

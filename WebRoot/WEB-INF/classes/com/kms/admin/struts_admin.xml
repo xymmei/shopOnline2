@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+		<package name="default" namespace = "/" extends = "struts-default">
+		
+		<action name="login" class = "com.kms.admin.action.LoginAction" method = "login">
+			<!-- <result name="success">/index.jsp</result> -->
+		</action>
+		<action name="logout" class = "com.kms.admin.action.LogoutAction" method = "logout">
+			<!-- <result name="success">/index.jsp</result> -->
+		</action>
+		<action name="load" class = "com.kms.admin.action.LoadAction" method = "load">
+			<!-- <result name="login">/admin/login.jsp</result> -->
+		</action>
+		<action name="screen" class = "com.kms.admin.action.ScreenAction" method = "screen">
+			<!-- <result name="success">/index.jsp</result> -->
+		</action>
+		<action name="findPend" class = "com.kms.admin.action.FindPendingShopAction" method = "findPend">
+			<!-- <result name="success">/index.jsp</result> -->
+		</action>
+		<action name="auditPend" class = "com.kms.admin.action.auditPendingShop" method = "auditPend">
+			<!-- <result name="success">/index.jsp</result> -->
+		</action>
+		 
+	</package>
+</struts>    
